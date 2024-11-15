@@ -69,7 +69,7 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <blockquote className="text-center max-w-3xl mx-auto">
           <p className="text-2xl text-gray-700 italic mb-4">
-            "Develop and promote intelligent, AI-driven products that enhance people's comfort and safety, support environmental sustainability, and uplift humanity."
+           {` "Develop and promote intelligent, AI-driven products that enhance people's comfort and safety, support environmental sustainability, and uplift humanity."`}
           </p>
           <footer className="text-green-700 font-semibold">— Managing Director GSSAR</footer>
         </blockquote>
