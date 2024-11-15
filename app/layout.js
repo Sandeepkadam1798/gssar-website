@@ -1,5 +1,9 @@
 import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
 import "./globals.css";
+import NavbarMenuItems from "@/components/Navbar";
+
+const inter = Poppins({ subsets: ["latin"] ,weight: ['100','300','400','500','700','900']});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,8 +25,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={inter.className}
       >
+        <NavbarMenuItems/>
         {children}
       </body>
     </html>
